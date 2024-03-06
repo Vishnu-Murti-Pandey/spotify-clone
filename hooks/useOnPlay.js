@@ -14,7 +14,7 @@ const useOnPlay = (songs) => {
             return authModal.onOpen();
         }
         if (!subcription) {
-            return subscribeModal.isOpen();
+            return subscribeModal.onOpen();
         }
 
         player.setId(id);

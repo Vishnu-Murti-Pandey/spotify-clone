@@ -22,7 +22,7 @@ const Library = ({ songs }) => {
             return authModal.onOpen();
         }
         if (!subcription) {
-            return subscribedModal.isOpen();
+            return subscribedModal.onOpen();
         }
         return uploadModal.onOpen();
     }
