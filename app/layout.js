@@ -12,7 +12,7 @@ import getActiveProductsWithPrices from "@/actions/getActiveProductsWithPrices";
 const figtree = Figtree({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Spotify Clone",
+  title: "Spotify Music App",
   description: "Listen music",
 };
 
