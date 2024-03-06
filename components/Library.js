@@ -6,11 +6,13 @@ import { useUser } from "@/hooks/useUser";
 import useUploadModal from "@/hooks/userUploadModal";
 import MediaItem from "./MediaItem";
 import useOnPlay from "@/hooks/useOnPlay";
+import useSubscribeModal from "@/hooks/useSubscribeModal";
 
 const Library = ({ songs }) => {
 
+    const subscribedModal = useSubscribeModal();
     const authModal = useAuthModel();
-    const { user } = useUser();
+    const { user, subcription } = useUser();
     const uploadModal = useUploadModal();
 
     const onPlay = useOnPlay(songs);
@@ -19,7 +21,9 @@ const Library = ({ songs }) => {
         if (!user) {
             return authModal.onOpen();
         }
-        // check for subscription
+        if (!subcription) {
+            return subscribedModal.isOpen();
+        }
         return uploadModal.onOpen();
     }
 

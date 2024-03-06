@@ -1,15 +1,20 @@
 import useAuthModel from "./useAuthModel";
 import usePlayer from "./usePlayer";
+import useSubscribeModal from "./useSubscribeModal";
 import { useUser } from "./useUser";
 
 const useOnPlay = (songs) => {
     const player = usePlayer();
+    const subscribeModal = useSubscribeModal();
     const authModal = useAuthModel();
-    const { user } = useUser();
+    const { user, subcription } = useUser();
 
     const onPlay = (id) => {
         if (!user) {
-            return authModal.Open();
+            return authModal.onOpen();
+        }
+        if (!subcription) {
+            return subscribeModal.isOpen();
         }
 
         player.setId(id);
