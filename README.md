@@ -1,6 +1,6 @@
 ## Spotify Music App
 
-### A Spotify Music App is a full-stack application. It Uses NextJS to interact with the users, it uses Supabase to store the user's info, music info, and payment details. This application uses Stripe as a payment gateway. You can search for the music, add your favorite music to your music library, and listen to the music with a smooth user experience.
+#### A Spotify Music App is a full-stack application. It Uses NextJS to interact with the users, it uses Supabase to store the user's info, music info, and payment details. This application uses Stripe as a payment gateway. You can search for the music, add your favorite music to your music library, and listen to the music with a smooth user experience.
 
 ## Tech-Stack
 
@@ -12,6 +12,30 @@
 ## Demo
 
 https://spotify-songs-app.vercel.app/
+
+<img src="screenshots\sp1.png" title="spotify">
+
+## Features
+
+#### Authentication
+
+<img src="screenshots\sp2.png" title="spotify">
+
+#### Music bar screen
+
+<img src="screenshots\sp6.png" title="spotify">
+
+#### Search bar screen
+
+<img src="screenshots\sp5.png" title="spotify">
+
+#### Payment Details Screen
+
+<img src="screenshots\sp3.png" title="spotify">
+
+<img src="screenshots\sp4.png" title="spotify">
+
+
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
